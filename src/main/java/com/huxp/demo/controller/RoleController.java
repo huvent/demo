@@ -1,5 +1,6 @@
 package com.huxp.demo.controller;
 
+import com.huxp.core.annotation.Json;
 import com.huxp.demo.entity.Role;
 import com.huxp.demo.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,7 @@ public class RoleController {
         return roleService.save(role);
     }
 
+    @Json(type = Role.class,filter = "deptId")
     @RequestMapping(value = "/sys/role/list", method = RequestMethod.GET)
     public @ResponseBody
     List<Role> findAll() {
