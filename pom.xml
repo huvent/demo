@@ -58,6 +58,11 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+
 		<!-- 为了监控数据库 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
@@ -68,6 +73,18 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
+
+		<!--<dependency>-->
+			<!--<groupId>org.aspectj</groupId>-->
+			<!--<artifactId>aspectjweaver</artifactId>-->
+			<!--<version>1.8.8</version>-->
+		<!--</dependency>-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.aspectj</groupId>-->
+			<!--<artifactId>aspectjrt</artifactId>-->
+			<!--<version>1.8.8</version>-->
+		<!--</dependency>-->
 
 		<!-- Json包 -->
 		<dependency>
@@ -81,6 +98,21 @@
 			<artifactId>activiti-spring-boot-starter-basic</artifactId>
 			<version>6.0.0</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+		<!--<dependency>-->
+			<!--<groupId>javax.ws.rs</groupId>-->
+			<!--<artifactId>javax.ws.rs-api</artifactId>-->
+			<!--<version>2.1</version>-->
+		<!--</dependency>-->
+
+		<!-- https://mvnrepository.com/artifact/com.esotericsoftware.reflectasm/reflectasm -->
+		<dependency>
+			<groupId>com.esotericsoftware.reflectasm</groupId>
+			<artifactId>reflectasm</artifactId>
+			<version>1.09</version>
+		</dependency>
+
 
 	</dependencies>
 

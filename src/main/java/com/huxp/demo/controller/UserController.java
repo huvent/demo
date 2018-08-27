@@ -1,5 +1,6 @@
 package com.huxp.demo.controller;
 
+import com.huxp.core.annotation.Json;
 import com.huxp.demo.controller.structure.UserRole;
 import com.huxp.demo.entity.User;
 import com.huxp.demo.service.UserService;
@@ -25,6 +26,7 @@ public class UserController {
         return userService.save(user);
     }
 
+    @Json(type = User.class)
     @RequestMapping(value = "/sys/user/list", method = RequestMethod.GET)
     public @ResponseBody
     List<User> findAll() {
